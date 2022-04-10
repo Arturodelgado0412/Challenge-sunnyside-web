@@ -45,11 +45,55 @@ body {
 }
 
 .nav-links{
-    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    background-color: var(--white);
+
+    display: grid;
+    gap: 1em;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s opacity;
 }
 
-.nav-hamburguer{
-    margin-right: 10px;
+
+.nav-links:target{
+    pointer-events: unset;
+    opacity: 1;
+    
+}
+
+
+.nav-links::before{
+    content: "";
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    top: -20px;
+    right: 0;
+    
+}
+
+.nav-link{
+    justify-self: center;
+    text-decoration: none;
+    color: var(--very-dark-grayish-blue);
+}
+
+.nav-link--cta{
+    color: var(--dark-blue);
+    background-color: var(--yellow);
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    font-family: var(--font1);
 }
 
 .hero-main {
@@ -273,12 +317,26 @@ body {
     .nav-hamburguer {
         display: none;
     }
+
+    
+    
+    .nav-links:target{
+        pointer-events: unset;
+        opacity: 1;
+        
+    }
     
     .nav-links{
+        background-color: unset;
+        position: unset;
+        width: unset;
+        margin: unset;
+        opacity: 1;
         display: grid;
         grid-auto-flow: column;
         gap: 1.2rem;
         align-items: center;
+        pointer-events: unset;
     }
 
     .nav-link{
@@ -289,9 +347,9 @@ body {
     .nav-link--cta{
         color: var(--dark-blue);
         background-color: var(--white);
-        padding: 1em 1.5em;
+        /*padding: 1em 1.5em;
         border-radius: 2em;
-        font-family: var(--font1);
+        font-family: var(--font1);*/
     }
 
     .services {
