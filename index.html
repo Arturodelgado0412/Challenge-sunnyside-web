@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,54 +14,138 @@
 
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header class="hero">
+    <nav class="nav container"> 
+      <img src="./images/logo.svg" alt="logo" class="nav-logo">
+      <img src="./images/icon-hamburger.svg" alt="menu-hamburguer" class="nav-hamburguer">
 
-  We are creatives
+      <div class="nav-links">
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link nav-link--cta">Contact</a>
+      </div>
+    </nav>
 
-  Transform your brand
+    <section class="hero-main container">
+      <h1 class="hero-title">We are creatives</h1>
+      <img src="./images/icon-arrow-down.svg" alt="arrow-ppal" class="hero-arrow">
+    </section>
+  </header>
+  <main>
+    <section class="services">
+      <div class="services-image service-image--1"></div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <div class="services-texts">
+        <h2 class="services-title">Transform your brand</h2>
+        <p class="services-paragraph">
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#" class="services-cta">Learn More</a>
+      </div>
+      <div class="services-image service-image--2"></div>
 
-  Learn more
+      <div class="services-texts services-texts--2">
+        <h2 class="services-title">Stand out to the right audience</h2>
+        <p class="services-paragraph">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <a href="#" class="services-cta">Learn More</a>
+      </div>
+    </section>
 
-  Stand out to the right audience
+    <section class="jobs">
+      <div class="jobs-section">
+        <h2 class="jobs-name">Graphic design</h2>
+        <p class="jobs-paragraph">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+        </p>
+      </div>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      <div class="jobs-section jobs-section--second">
+        <h2 class="jobs-name">Photography</h2>
+        <p class="jobs-paragraph">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </section>
 
-  Learn more
+    <section class="testimonials container">
+      <h2 class="testimonials-title">Client testimonials</h2>
+      <div class="testimonials-container">
+        <article class="testimonials-item">
+          <img src="./images/image-emily.jpg" alt="emily-image" class="testimonials-img">
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          <p class="testimonials-paragraph">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <h3 class="testimonials-name">Emily R.</h3>
+          <p class="testimonials-job">Marketing Director</p>
+        </article>
+        
+        <article class="testimonials-item">
+          <img src="./images/image-thomas.jpg" alt="emily-image" class="testimonials-img">
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          <p class="testimonials-paragraph">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h3 class="testimonials-name"> Thomas S.</h3>
+          <p class="testimonials-job">  Chief Operating Officer</p>
+        </article>
 
-  Client testimonials
+        <article class="testimonials-item">
+          <img src="./images/image-jennie.jpg" alt="emily-image" class="testimonials-img">
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+          <p class="testimonials-paragraph">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h3 class="testimonials-name"> Jennie F.</h3>
+          <p class="testimonials-job">  Business Owner</p>
+        </article>
+      </div>
+    </section>
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+    <section class="gallery">
+      <div class="gallery-image"></div>
+      <div class="gallery-image"></div>
+      <div class="gallery-image"></div>
+      <div class="gallery-image"></div>
+    </section>
+  </main>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+  <footer class="footer">
+    <div class="footer-container container">
+      <img src="./images/logo-green.svg" alt="" class="footer-logo">
 
-  About
-  Services
-  Projects
-  Contact
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">About</a>
+        <a href="#" class="footer-link">Services</a>
+        <a href="#" class="footer-link">Projects</a>
+      </nav>
 
-  <div class="attribution">
+        <nav class="footer-social">
+          <a href="#" class="footer-media">
+            <img src="./images/icon-facebook.svg" alt="" class="footer-icon">
+          </a>
+          <a href="#" class="footer-media">
+            <img src="./images/icon-instagram.svg" alt="" class="footer-icon">
+          </a>
+          <a href="#" class="footer-media">
+            <img src="./images/icon-twitter.svg" alt="" class="footer-icon">
+          </a>
+          <a href="#" class="footer-media">
+            <img src="./images/icon-pinterest.svg" alt="" class="footer-icon">
+          </a>
+        </nav>
+    </div>
+  </footer>
+
+
+  <!--Contact
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div>-->
 </body>
 </html>
